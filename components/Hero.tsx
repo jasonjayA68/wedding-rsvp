@@ -1,5 +1,6 @@
 import { Botanical } from "@/components/Botanical";
 import { Countdown } from "@/components/Countdown";
+import { Entourage } from "@/components/Entourage";
 import { buttonVariants } from "@/components/ui/Button";
 import { siteContent } from "@/data/site-content";
 import { cn } from "@/lib/cn";
@@ -57,6 +58,7 @@ export function Hero() {
           <a href="#rsvp" className={buttonVariants("primary", "lg")}>
             {hero.ctaLabel}
           </a>
+          <Entourage />
           <a href="#details" className={cn(buttonVariants("ghost", "lg"))}>
             View details
           </a>

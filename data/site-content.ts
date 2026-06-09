@@ -155,6 +155,177 @@ export const siteContent = {
       "Your RSVP has been received. We can't wait to celebrate with you — keep an eye on your inbox for more details.",
   },
 
+  /**
+   * Wedding entourage — shown in a pop-up triggered from the hero.
+   * Transcribed from the printed program images. PLEASE PROOFREAD the names
+   * and spellings; everything here is freely editable.
+   */
+  entourage: {
+    triggerLabel: "The Entourage",
+    title: "The Entourage",
+    subtitle: "Uy – Pitogo Nuptials",
+
+    officiant: { role: "Officiating Priest", names: ["Fr. Wesly S. Montalban"] },
+
+    parents: [
+      { role: "Bride's Parents", names: ["Mr. Teodoro M. Pitogo Jr.", "Mrs. Elizabeth C. Pitogo"] },
+      { role: "Groom's Parents", names: ["Mr. Manuel T. Uy Jr.", "Mrs. Minerva A. Uy"] },
+    ],
+
+    principalSponsors: {
+      title: "Principal Sponsors",
+      note: "To stand as principal witness to our vows",
+      left: [
+        "Dr. Janry B. Colonia",
+        "Dr. Nilo Aviola",
+        "Mr. Edgardo Biscocho",
+        "Mr. Benjamin Uñalan",
+        "Mr. Antonio Amarga",
+        "Mr. Mardel Monterola",
+        "Mr. Earl A. Taluban",
+        "Mr. Donald Seronay",
+        "Mr. Romel Seronay",
+        "Mr. Bernie Cilmar",
+        "Mr. Ryan Jess Dapogracion",
+        "Mr. Jack Gorgod",
+        "Mr. Cerello Gumban",
+        "Mr. Teofanes Cilmar",
+        "Mr. Ignacio Latras",
+        "Mr. Mario O. Agunat",
+        "Mr. Jojo Sumalhag",
+        "Mr. Coridilito Mindajao",
+        "Mr. Roldan A. Luzano",
+        "Mr. Wendell Lee Quilaman",
+        "Mr. Raul Sabornido",
+        "Mr. Ronnie M. Cultura",
+        "Mr. Louie Lagbas",
+        "Mr. Miguel Ababao",
+        "Mr. Fred Dagani",
+        "Mr. Jasper Ababao",
+        "Mr. Franklin Butawan",
+        "Mr. Ramon Alope",
+        "Mr. Jeffrey Cilmar",
+        "Mr. Janilou Cilmar",
+        "Mr. Danilo Sumaljag",
+        "Mr. Rogelio Demana",
+        "Mr. Jessie Castino",
+        "Ms. Maricris Bullecer",
+        "Ms. Julian B. Castillo",
+        "Ms. Nida Pamad",
+        "Ms. Terisita Babayo",
+        "Mr. Charly Figura",
+        "Ms. Jill Mangayan",
+        "Ms. Pablia Ortiz",
+      ],
+      right: [
+        "Mrs. Aura V. Colonia",
+        "Mrs. Myrna Juventud",
+        "Mrs. Merlyn Uy Biscocho",
+        "Mrs. Daryn Uñalan",
+        "Mrs. Bella S. Amarga",
+        "Mrs. Barbara Montalban",
+        "Mrs. Andrina C. Taluban",
+        "Mrs. Perla Seronay",
+        "Mrs. Grace Seronay",
+        "Mrs. Sharon Cilmar",
+        "Mrs. Stella Mae Dapogracion",
+        "Mrs. Janice Gorgod",
+        "Mrs. Deliah Gumban",
+        "Mrs. Ginalie Cilmar",
+        "Mrs. Mary Jane Latras",
+        "Mrs. Chona C. Agunat",
+        "Mrs. Jean Juventud",
+        "Mrs. Juliet Mindajao",
+        "Mrs. Maureen B. Luzano",
+        "Mrs. Edmacel C. Quilaman",
+        "Mrs. Imelda Sabornido",
+        "Mrs. Elenita C. Cultura",
+        "Mrs. Cheryl A. Magdamo",
+        "Mrs. Rodelia A. Jadulco",
+        "Mrs. Betty Denque",
+        "Ms. Bess Kenneth Uy",
+        "Ms. Lilibeth Aspacio",
+        "Ms. Merychell A. Seronay",
+        "Ms. Felipa M. Asis",
+        "Ms. Marilyn H. Inson",
+        "Ms. Nimfa Gella",
+        "Ms. Mercedita Claros",
+        "Ms. Xyrus Amatong",
+        "Ms. Vivena C. Encong",
+        "Ms. Gina Rose Balaba",
+        "Ms. Carmela Hortilano",
+        "Ms. Emma Taluban",
+        "Ms. Charlyn Gongob",
+        "Ms. Annie Mangayan",
+      ],
+    },
+
+    assist: {
+      note: "To assist us in our needs",
+      pair: [
+        { role: "Best Man", names: ["Mr. Jason Jay A. Ababao"] },
+        { role: "Maid of Honor", names: ["Ms. Jubille C. Pitogo"] },
+      ],
+    },
+
+    party: {
+      note: "To guide us on our way ahead",
+      columns: [
+        {
+          title: "Groomsmen",
+          names: [
+            "Mr. Jade Gorgod",
+            "Mr. Reynald Ihong",
+            "Mr. Cedrick Aisa",
+            "Mr. Roland Villacorta",
+            "Mr. Chris Gerson Balana",
+          ],
+        },
+        {
+          title: "Bridesmaids",
+          names: [
+            "Ms. Lisley A. Uy",
+            "Ms. Jhai Gorgod",
+            "Ms. April Joy Cilmar",
+            "Ms. Jubie Mae Butawan",
+            "Ms. Joeveyjane Baclayun",
+          ],
+        },
+      ],
+    },
+
+    secondarySponsors: {
+      title: "Secondary Sponsors",
+      rites: [
+        { role: "Candle", note: "To light our path", names: ["Mr. Jarold Pitogo", "Mrs. Jessa Pitogo"] },
+        { role: "Cord", note: "To bind us together", names: ["Mr. Lemuel Luzano", "Mrs. Cherryl Luzano"] },
+        { role: "Veil", note: "To cover us as one", names: ["Mr. Michael Dave L. Limbaco", "Mrs. Mira Lee Uy-Limbaco"] },
+      ],
+      bearers: [
+        { role: "Ring Bearer", names: ["Jhon Herville Pitogo"] },
+        { role: "Bible Bearer", names: ["Lee Sebastian P. Luzano"] },
+        { role: "Coin Bearer", names: ["Mark Ethan G. Uy"] },
+        { role: "Banner Bearer", names: ["Zabdiel Ketxu U. Gomonit", "Gabiel Kenzu U. Gomonit"] },
+      ],
+      flowerGirls: {
+        role: "Flower Girls",
+        names: [
+          "Athena Celestin R. Uy",
+          "Chrisle Ann Pitogo | Janrich Gorgod",
+          "Chenny Mae Luzano | Junmark Pitogo",
+          "Scarlet Sophia Pitogo",
+          "Abigael Cilmar",
+          "Christianne Macatol",
+          "Bella Rae C. Taluban",
+        ],
+      },
+      littles: [
+        { role: "Little Groom", names: ["Austin Theo P. Uy"] },
+        { role: "Little Bride", names: ["Mi Kaellee U. Limbaco"] },
+      ],
+    },
+  },
+
   /** Footer. */
   footer: {
     hashtag: "#DAVEstinedForEliza",
