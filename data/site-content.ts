@@ -131,6 +131,17 @@ export const siteContent = {
     ],
   },
 
+  /** A note on gifts. */
+  gifts: {
+    heading: "On Gifts",
+    lead: "Your presence is truly the only gift we need.",
+    body: [
+      "However, if you would like to honor us with a gift, a monetary contribution toward our future together would be greatly appreciated.",
+      "For guests who prefer to give a physical gift, a designated gift table will be available at the reception.",
+    ],
+    closing: "Thank you for celebrating this special day with us.",
+  },
+
   /** RSVP section. */
   rsvp: {
     heading: "Will you celebrate with us?",

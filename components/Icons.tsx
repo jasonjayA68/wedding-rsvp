@@ -69,6 +69,18 @@ export function HeartIcon(props: IconProps) {
   );
 }
 
+export function GiftIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="8" width="18" height="4.5" rx="1" />
+      <path d="M19.5 12.5V20a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-7.5" />
+      <path d="M12 8v13" />
+      <path d="M12 8C12 8 10.7 4 8.2 4a2.1 2.1 0 0 0 0 4z" />
+      <path d="M12 8C12 8 13.3 4 15.8 4a2.1 2.1 0 0 1 0 4z" />
+    </svg>
+  );
+}
+
 export function SpinnerIcon(props: IconProps) {
   return (
     <svg {...base} {...props} className={`animate-spin ${props.className ?? ""}`}>

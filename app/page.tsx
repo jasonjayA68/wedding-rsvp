@@ -1,4 +1,5 @@
 import { EventDetails } from "@/components/EventDetails";
+import { Gifts } from "@/components/Gifts";
 import { Hero } from "@/components/Hero";
 import { RSVPForm } from "@/components/RSVPForm";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <EventDetails />
       <WeddingColors />
+      <Gifts />
 
       <Section
         id="rsvp"
