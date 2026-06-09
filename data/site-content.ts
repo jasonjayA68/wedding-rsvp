@@ -109,7 +109,7 @@ export const siteContent = {
       { time: "1:00 PM", title: "Ceremony", description: "Sacred Heart of Jesus Parish" },
       { time: "3:00 PM", title: "Cocktails & Photos", description: "Garden terrace" },
       { time: "4:00 PM", title: "Reception", description: "Dinner, toasts & dancing" },
-      { time: "9:00 PM", title: "Send-off", description: "A sparkler farewell" },
+      { time: "9:00 PM onwards", title: "Disco", description: "Dancing into the night" },
     ] as ScheduleItem[],
   },
 
