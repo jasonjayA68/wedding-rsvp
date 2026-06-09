@@ -2,6 +2,7 @@ import { EventDetails } from "@/components/EventDetails";
 import { Hero } from "@/components/Hero";
 import { RSVPForm } from "@/components/RSVPForm";
 import { SiteFooter } from "@/components/SiteFooter";
+import { WeddingColors } from "@/components/WeddingColors";
 import { Section } from "@/components/ui/Section";
 import { siteContent } from "@/data/site-content";
 import { formatLongDate } from "@/lib/format";
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <EventDetails />
+      <WeddingColors />
 
       <Section
         id="rsvp"

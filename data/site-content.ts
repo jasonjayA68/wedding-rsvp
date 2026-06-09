@@ -94,11 +94,6 @@ export const siteContent = {
           href: "https://maps.google.com/?q=Multipurpose+Hall+Purok+9+Salvacion+Bayugan+City",
         },
       },
-      {
-        icon: "dress",
-        title: "Dress Code",
-        lines: ["Formal · Garden attire", "Sage, ivory & earth tones"],
-      },
     ] as DetailCard[],
   },
 
@@ -111,6 +106,29 @@ export const siteContent = {
       { time: "4:00 PM", title: "Reception", description: "Dinner, toasts & dancing" },
       { time: "9:00 PM onwards", title: "Disco", description: "Dancing into the night" },
     ] as ScheduleItem[],
+  },
+
+  /** Dress code + wedding color palette (rendered as swatches). */
+  attire: {
+    heading: "Dress Code",
+    subheading: "We can't wait to see you all dressed up.",
+    preferenceTitle: "Attire Preference",
+    preference: [
+      "Formal / Semi-Formal",
+      "Come dressed elegantly, but stay comfortable!",
+      "We'd love to see you wearing our wedding colors.",
+      "Kindly, no jeans or shorts :)",
+    ],
+    colorsTitle: "Wedding Colors",
+    colorsNote: "A little palette to guide your outfit.",
+    /** Edit names/hex freely — drawn from the invitation's sage & cream palette. */
+    colors: [
+      { name: "Eucalyptus", hex: "#5f6b43" },
+      { name: "Sage", hex: "#95a373" },
+      { name: "Sea Glass", hex: "#c4d2bd" },
+      { name: "Dusty Blue", hex: "#9fb6c9" },
+      { name: "Ivory", hex: "#efe9dc" },
+    ],
   },
 
   /** RSVP section. */
@@ -128,7 +146,7 @@ export const siteContent = {
 
   /** Footer. */
   footer: {
-    hashtag: "#DaveAndElizaForever",
+    hashtag: "#DAVEstinedForEliza",
     closing: "With love and gratitude,",
   },
 } as const;
