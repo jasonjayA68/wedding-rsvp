@@ -1,0 +1,136 @@
+/**
+ * =============================================================================
+ *  EDIT EVERYTHING HERE
+ * =============================================================================
+ *  This is the single source of truth for all text and event information shown
+ *  on the public site. Change names, dates, copy, venue, links, and the photo
+ *  here — no other files need to be touched for content edits.
+ *
+ *  To change COLORS and FONTS, see `app/globals.css` (the `@theme` block).
+ * =============================================================================
+ */
+
+export type ScheduleItem = {
+  time: string;
+  title: string;
+  description?: string;
+};
+
+export type DetailCard = {
+  /** Name of an icon from `components/Icons.tsx` */
+  icon: "rings" | "calendar" | "location" | "clock" | "dress" | "heart";
+  title: string;
+  lines: string[];
+  /** Optional link rendered as a button under the card */
+  action?: { label: string; href: string };
+};
+
+export const siteContent = {
+  /** Couple — shown in the hero and throughout the site. */
+  couple: {
+    partnerOne: "Dave",
+    partnerTwo: "Eliza",
+  },
+
+  /** Browser tab title + share description. */
+  meta: {
+    title: "Dave & Eliza — Wedding RSVP",
+    description:
+      "Join us as we celebrate the wedding of Dave & Eliza on June 27, 2026 in Bayugan City. RSVP today.",
+  },
+
+  /** Hero (the first thing guests see). */
+  hero: {
+    eyebrow: "Together with their families",
+    invitation: "request the pleasure of your company at the celebration of their marriage",
+    /** Used for the stacked date block in the hero. */
+    dateBlock: {
+      month: "June",
+      day: "27",
+      year: "2026",
+      weekday: "Saturday",
+      time: "1:00 in the afternoon",
+    },
+    venueShort: "Sacred Heart of Jesus Parish · Bayugan City",
+    ctaLabel: "RSVP",
+  },
+
+  /** Canonical event date/time — drives the countdown and formatted dates. */
+  event: {
+    /** ISO date (YYYY-MM-DD). Used for countdown + formatting. */
+    date: "2026-06-27",
+    /** Human-friendly time, shown as-is. */
+    time: "1:00 PM",
+    ceremonyVenue: "Sacred Heart of Jesus Parish",
+    ceremonyAddress: "Poblacion, Bayugan City, Agusan del Sur",
+    receptionVenue: "Multipurpose Hall",
+    receptionAddress: "Purok 9, Salvacion, Bayugan City",
+    /** Opens in Google Maps. Replace with your venue's link. */
+    mapUrl: "https://maps.google.com/?q=Sacred+Heart+of+Jesus+Parish+Bayugan+City",
+  },
+
+  /** "Details" section cards. Add, remove, or reorder freely. */
+  details: {
+    heading: "The Details",
+    subheading: "Everything you need to know for our special day.",
+    cards: [
+      {
+        icon: "calendar",
+        title: "The Date",
+        lines: ["Saturday", "June 27, 2026"],
+      },
+      {
+        icon: "rings",
+        title: "The Ceremony",
+        lines: ["1:00 PM", "Sacred Heart of Jesus Parish", "Bayugan City"],
+        action: { label: "View map", href: "https://maps.google.com/?q=Sacred+Heart+of+Jesus+Parish+Bayugan+City" },
+      },
+      {
+        icon: "heart",
+        title: "The Reception",
+        lines: ["4:00 PM", "Multipurpose Hall", "Purok 9, Salvacion, Bayugan City"],
+        action: {
+          label: "View map",
+          href: "https://maps.google.com/?q=Multipurpose+Hall+Purok+9+Salvacion+Bayugan+City",
+        },
+      },
+      {
+        icon: "dress",
+        title: "Dress Code",
+        lines: ["Formal · Garden attire", "Sage, ivory & earth tones"],
+      },
+    ] as DetailCard[],
+  },
+
+  /** Optional timeline shown under the details. Set to [] to hide. */
+  schedule: {
+    heading: "Order of the Day",
+    items: [
+      { time: "1:00 PM", title: "Ceremony", description: "Sacred Heart of Jesus Parish" },
+      { time: "3:00 PM", title: "Cocktails & Photos", description: "Garden terrace" },
+      { time: "4:00 PM", title: "Reception", description: "Dinner, toasts & dancing" },
+      { time: "9:00 PM", title: "Send-off", description: "A sparkler farewell" },
+    ] as ScheduleItem[],
+  },
+
+  /** RSVP section. */
+  rsvp: {
+    heading: "Will you celebrate with us?",
+    description:
+      "We would be honored to have you. Kindly let us know if you can make it by the date below.",
+    /** ISO date — shown as the RSVP deadline. */
+    deadline: "2026-06-24",
+    /** Shown after a successful submission. */
+    successTitle: "Thank you!",
+    successMessage:
+      "Your RSVP has been received. We can't wait to celebrate with you — keep an eye on your inbox for more details.",
+  },
+
+  /** Footer. */
+  footer: {
+    hashtag: "#DaveAndElizaForever",
+    closing: "With love and gratitude,",
+  },
+} as const;
+
+export type SiteContent = typeof siteContent;
