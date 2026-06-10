@@ -91,7 +91,7 @@ export const siteContent = {
         lines: ["5:00 PM", "Multipurpose Hall", "Purok 7, Salvacion, Bayugan City"],
         action: {
           label: "View map",
-          href: "https://maps.google.com/?q=Multipurpose+Hall+Purok+7+Salvacion+Bayugan+City",
+          href: "https://maps.app.goo.gl/noVF23FxvongKdRB9",
         },
       },
     ] as DetailCard[],
@@ -244,7 +244,7 @@ export const siteContent = {
         "Mrs. Cheryl A. Magdamo",
         "Mrs. Rodelia A. Jadulco",
         "Mrs. Betty Denque",
-        "Mrs. Rita Eugencio",
+        "Mrs. Rita Eugenio",
         "Ms. Bess Kenneth Uy",
         "Ms. Lilibeth Aspacio",
         "Ms. Merychell A. Seronay",
