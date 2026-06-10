@@ -196,6 +196,9 @@ export function Entourage() {
                     </div>
                   </section>
 
+                  {/* Usherettes */}
+                  <Block {...entourage.usherettes} />
+
                   {/* Secondary Sponsors */}
                   <section className="w-full">
                     <SectionHeading>{secondary.title}</SectionHeading>

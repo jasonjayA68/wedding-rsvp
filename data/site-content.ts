@@ -278,7 +278,7 @@ export const siteContent = {
           names: [
             "Mr. Jade Gorgod",
             "Mr. Reynald Ihong",
-            "Mr. Cedrick Aisa",
+            "Mr. Santiago Micabalo",
             "Mr. Ryan Requiz",
             "Mr. Chris Gerson Balana",
           ],
@@ -293,6 +293,18 @@ export const siteContent = {
             "Ms. Joeveyjane Baclayun",
           ],
         },
+      ],
+    },
+
+    usherettes: {
+      role: "Usherettes",
+      names: [
+        "Nikki Macatol",
+        "Berlina Cilmar",
+        "Analyn Cilmar",
+        "Rose Marie Castino",
+        "Floraniel Aragos",
+        "Alexa Rose Amatong",
       ],
     },
 
