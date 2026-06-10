@@ -64,7 +64,7 @@ export const siteContent = {
     ceremonyVenue: "Sacred Heart of Jesus Parish",
     ceremonyAddress: "Poblacion, Bayugan City, Agusan del Sur",
     receptionVenue: "Multipurpose Hall",
-    receptionAddress: "Purok 9, Salvacion, Bayugan City",
+    receptionAddress: "Purok 7, Salvacion, Bayugan City",
     /** Opens in Google Maps. Replace with your venue's link. */
     mapUrl: "https://maps.google.com/?q=Sacred+Heart+of+Jesus+Parish+Bayugan+City",
   },
@@ -88,10 +88,10 @@ export const siteContent = {
       {
         icon: "heart",
         title: "The Reception",
-        lines: ["5:00 PM", "Multipurpose Hall", "Purok 9, Salvacion, Bayugan City"],
+        lines: ["5:00 PM", "Multipurpose Hall", "Purok 7, Salvacion, Bayugan City"],
         action: {
           label: "View map",
-          href: "https://maps.google.com/?q=Multipurpose+Hall+Purok+9+Salvacion+Bayugan+City",
+          href: "https://maps.google.com/?q=Multipurpose+Hall+Purok+7+Salvacion+Bayugan+City",
         },
       },
     ] as DetailCard[],

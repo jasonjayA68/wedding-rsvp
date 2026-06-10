@@ -158,13 +158,13 @@ export function Entourage() {
                       {entourage.principalSponsors.note}
                     </p>
                     {/* Two columns at every size so guests see their pairing. */}
-                    <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 sm:gap-x-10">
-                      <ul className="space-y-1.5 text-right font-serif text-[12px] leading-snug text-ink-700 sm:text-[15px]">
+                    <div className="grid grid-cols-2 gap-x-2 gap-y-2 sm:gap-x-10">
+                      <ul className="space-y-1.5 text-right font-serif text-[13.5px] leading-snug text-ink-700 sm:text-[18px]">
                         {entourage.principalSponsors.left.map((n) => (
                           <li key={n}>{n}</li>
                         ))}
                       </ul>
-                      <ul className="space-y-1.5 text-left font-serif text-[12px] leading-snug text-ink-700 sm:text-[15px]">
+                      <ul className="space-y-1.5 text-left font-serif text-[13.5px] leading-snug text-ink-700 sm:text-[18px]">
                         {entourage.principalSponsors.right.map((n) => (
                           <li key={n}>{n}</li>
                         ))}
