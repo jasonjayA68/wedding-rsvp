@@ -243,6 +243,7 @@ export const siteContent = {
         "Mrs. Cheryl A. Magdamo",
         "Mrs. Rodelia A. Jadulco",
         "Mrs. Betty Denque",
+        "Mrs. Rita Eugencio",
         "Ms. Bess Kenneth Uy",
         "Ms. Lilibeth Aspacio",
         "Ms. Merychell A. Seronay",
@@ -281,6 +282,7 @@ export const siteContent = {
             "Mr. Santiago Micabalo",
             "Mr. Ryan Requiz",
             "Mr. Chris Gerson Balana",
+            "Mr. Carl Albert Agunat",
           ],
         },
         {
@@ -291,6 +293,7 @@ export const siteContent = {
             "Ms. April Joy Cilmar",
             "Ms. Jubie Mae Butawan",
             "Ms. Joeveyjane Baclayun",
+            "Ms. May Climar",
           ],
         },
       ],
