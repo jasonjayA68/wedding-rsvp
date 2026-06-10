@@ -157,15 +157,18 @@ export function Entourage() {
                     <p className="mb-6 mt-3 text-center eyebrow text-[10px] text-sage-600">
                       {entourage.principalSponsors.note}
                     </p>
-                    <div className="grid grid-cols-1 gap-x-10 gap-y-1 sm:grid-cols-2">
-                      <NameList
-                        names={entourage.principalSponsors.left}
-                        className="text-center sm:text-right"
-                      />
-                      <NameList
-                        names={entourage.principalSponsors.right}
-                        className="text-center sm:text-left"
-                      />
+                    {/* Two columns at every size so guests see their pairing. */}
+                    <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 sm:gap-x-10">
+                      <ul className="space-y-1.5 text-right font-serif text-[12px] leading-snug text-ink-700 sm:text-[15px]">
+                        {entourage.principalSponsors.left.map((n) => (
+                          <li key={n}>{n}</li>
+                        ))}
+                      </ul>
+                      <ul className="space-y-1.5 text-left font-serif text-[12px] leading-snug text-ink-700 sm:text-[15px]">
+                        {entourage.principalSponsors.right.map((n) => (
+                          <li key={n}>{n}</li>
+                        ))}
+                      </ul>
                     </div>
                   </section>
 
@@ -203,7 +206,7 @@ export function Entourage() {
                       ))}
                     </div>
 
-                    <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4">
+                    <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3">
                       {secondary.bearers.map((b) => (
                         <Block key={b.role} {...b} />
                       ))}

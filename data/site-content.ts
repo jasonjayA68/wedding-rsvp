@@ -88,7 +88,7 @@ export const siteContent = {
       {
         icon: "heart",
         title: "The Reception",
-        lines: ["4:00 PM", "Multipurpose Hall", "Purok 9, Salvacion, Bayugan City"],
+        lines: ["5:00 PM", "Multipurpose Hall", "Purok 9, Salvacion, Bayugan City"],
         action: {
           label: "View map",
           href: "https://maps.google.com/?q=Multipurpose+Hall+Purok+9+Salvacion+Bayugan+City",
@@ -103,7 +103,7 @@ export const siteContent = {
     items: [
       { time: "1:00 PM", title: "Ceremony", description: "Sacred Heart of Jesus Parish" },
       { time: "3:00 PM", title: "Cocktails & Photos", description: "Garden terrace" },
-      { time: "4:00 PM", title: "Reception", description: "Dinner, toasts & dancing" },
+      { time: "5:00 PM", title: "Reception", description: "Dinner, toasts & dancing" },
       { time: "9:00 PM onwards", title: "Disco", description: "Dancing into the night" },
     ] as ScheduleItem[],
   },
@@ -123,10 +123,10 @@ export const siteContent = {
     colorsNote: "A little palette to guide your outfit.",
     /** Edit names/hex freely — drawn from the invitation's sage & cream palette. */
     colors: [
+      { name: "Emerald", hex: "#1f7a54" },
       { name: "Eucalyptus", hex: "#5f6b43" },
       { name: "Sage", hex: "#95a373" },
       { name: "Sea Glass", hex: "#c4d2bd" },
-      { name: "Dusty Blue", hex: "#9fb6c9" },
       { name: "Ivory", hex: "#efe9dc" },
     ],
   },
@@ -257,6 +257,8 @@ export const siteContent = {
         "Ms. Emma Taluban",
         "Ms. Charlyn Gongob",
         "Ms. Annie Mangayan",
+        "Ms. Curvada Curveua",
+        "Ms. Noreen Ipanag",
       ],
     },
 
@@ -277,7 +279,7 @@ export const siteContent = {
             "Mr. Jade Gorgod",
             "Mr. Reynald Ihong",
             "Mr. Cedrick Aisa",
-            "Mr. Roland Villacorta",
+            "Mr. Ryan Requiz",
             "Mr. Chris Gerson Balana",
           ],
         },
@@ -305,7 +307,6 @@ export const siteContent = {
         { role: "Ring Bearer", names: ["Jhon Herville Pitogo"] },
         { role: "Bible Bearer", names: ["Lee Sebastian P. Luzano"] },
         { role: "Coin Bearer", names: ["Mark Ethan G. Uy"] },
-        { role: "Banner Bearer", names: ["Zabdiel Ketxu U. Gomonit", "Gabiel Kenzu U. Gomonit"] },
       ],
       flowerGirls: {
         role: "Flower Girls",
