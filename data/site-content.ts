@@ -216,6 +216,7 @@ export const siteContent = {
         "Mr. Charly Figura",
         "Ms. Jill Mangayan",
         "Ms. Pablia Ortiz",
+        "Ms. Curvada Curveua",
       ],
       right: [
         "Mrs. Aura V. Colonia",
@@ -258,7 +259,6 @@ export const siteContent = {
         "Ms. Emma Taluban",
         "Ms. Charlyn Gongob",
         "Ms. Annie Mangayan",
-        "Ms. Curvada Curveua",
         "Ms. Noreen Ipanag",
       ],
     },

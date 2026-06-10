@@ -84,6 +84,12 @@ export function Entourage() {
 
   const { secondarySponsors: secondary } = entourage;
 
+  // Principal sponsors render as two equal-length columns; any leftover names
+  // (when one side has more) are centered below so they don't dangle.
+  const ps = entourage.principalSponsors;
+  const psPairLen = Math.min(ps.left.length, ps.right.length);
+  const psTail = [...ps.left.slice(psPairLen), ...ps.right.slice(psPairLen)];
+
   return (
     <>
       <button
@@ -157,19 +163,26 @@ export function Entourage() {
                     <p className="mb-6 mt-3 text-center eyebrow text-[10px] text-sage-600">
                       {entourage.principalSponsors.note}
                     </p>
-                    {/* Two columns at every size so guests see their pairing. */}
+                    {/* Two equal columns so guests see their pairing; extras center below. */}
                     <div className="grid grid-cols-2 gap-x-2 gap-y-2 sm:gap-x-10">
                       <ul className="space-y-1.5 text-right font-serif text-[13.5px] leading-snug text-ink-700 sm:text-[18px]">
-                        {entourage.principalSponsors.left.map((n) => (
+                        {ps.left.slice(0, psPairLen).map((n) => (
                           <li key={n}>{n}</li>
                         ))}
                       </ul>
                       <ul className="space-y-1.5 text-left font-serif text-[13.5px] leading-snug text-ink-700 sm:text-[18px]">
-                        {entourage.principalSponsors.right.map((n) => (
+                        {ps.right.slice(0, psPairLen).map((n) => (
                           <li key={n}>{n}</li>
                         ))}
                       </ul>
                     </div>
+                    {psTail.length > 0 && (
+                      <ul className="mt-1.5 space-y-1.5 text-center font-serif text-[13.5px] leading-snug text-ink-700 sm:text-[18px]">
+                        {psTail.map((n) => (
+                          <li key={n}>{n}</li>
+                        ))}
+                      </ul>
+                    )}
                   </section>
 
                   {/* Best Man / Maid of Honor */}
