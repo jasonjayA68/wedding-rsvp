@@ -203,9 +203,11 @@ export function Entourage() {
                   <section className="w-full">
                     <SectionHeading>{secondary.title}</SectionHeading>
 
-                    <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-3">
+                    <div className="mt-8 flex flex-wrap justify-center gap-x-12 gap-y-12">
                       {secondary.rites.map((r) => (
-                        <Block key={r.role} {...r} />
+                        <div key={r.role} className="w-full sm:w-auto sm:max-w-[240px]">
+                          <Block {...r} />
+                        </div>
                       ))}
                     </div>
 

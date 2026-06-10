@@ -314,6 +314,11 @@ export const siteContent = {
         { role: "Candle", note: "To light our path", names: ["Mr. Jarold Pitogo", "Mrs. Jessa Pitogo"] },
         { role: "Cord", note: "To bind us together", names: ["Mr. Lemuel Luzano", "Mrs. Cherryl Luzano"] },
         { role: "Veil", note: "To cover us as one", names: ["Mr. Michael Dave L. Limbaco", "Mrs. Mira Lee Uy-Limbaco"] },
+        { role: "Wine & Ostiya Bearer", names: ["Mr. Claudio Gomonit", "Mrs. Messhie Jane Gomonit"] },
+        {
+          role: "Fruits & Gifts",
+          names: ["Jay Patrick Uy | Marites Ganzan", "Rey Humbert Uy | Glory Mae Racho"],
+        },
       ],
       bearers: [
         { role: "Ring Bearer", names: ["Jhon Herville Pitogo"] },
