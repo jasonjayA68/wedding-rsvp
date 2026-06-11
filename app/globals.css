@@ -43,6 +43,7 @@
   /* Subtle entrance animations. */
   --animate-fade-up: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-fade-in: fade-in 1.2s ease both;
+  --animate-soft-pulse: soft-pulse 2.6s ease-in-out infinite;
 }
 
 @keyframes fade-up {
@@ -62,6 +63,17 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+/* Gentle "breathing" cue to draw attention to the entourage button. */
+@keyframes soft-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.045);
   }
 }
 

@@ -69,6 +69,17 @@ export function HeartIcon(props: IconProps) {
   );
 }
 
+export function UsersIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="9" cy="8" r="3.25" />
+      <path d="M3.5 19.5a5.5 5.5 0 0 1 11 0" />
+      <path d="M15.5 5a3.25 3.25 0 0 1 0 6" />
+      <path d="M17 13.8a5.5 5.5 0 0 1 3.5 5.7" />
+    </svg>
+  );
+}
+
 export function GiftIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>

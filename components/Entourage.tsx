@@ -5,8 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 import { Botanical } from "@/components/Botanical";
-import { RingsIcon, XIcon } from "@/components/Icons";
-import { buttonVariants } from "@/components/ui/Button";
+import { RingsIcon, UsersIcon, XIcon } from "@/components/Icons";
 import { siteContent } from "@/data/site-content";
 import { cn } from "@/lib/cn";
 
@@ -96,8 +95,10 @@ export function Entourage() {
         ref={triggerRef}
         type="button"
         onClick={() => setOpen(true)}
-        className={buttonVariants("outline", "lg")}
+        aria-haspopup="dialog"
+        className="animate-soft-pulse inline-flex h-12 items-center justify-center gap-2 rounded-full border border-sage-400 bg-white px-7 text-sm font-medium tracking-[0.08em] text-sage-700 shadow-sm outline-none transition-colors duration-200 hover:bg-sage-50 focus-visible:ring-2 focus-visible:ring-sage-300"
       >
+        <UsersIcon className="h-[18px] w-[18px]" />
         {entourage.triggerLabel}
       </button>
 
